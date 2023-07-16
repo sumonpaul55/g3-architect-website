@@ -178,10 +178,12 @@ header {
 .fact-section {
   padding: 60px 0;
 }
-.some-facts {
+.some-facts,
+.sponsor-top {
   max-width: 40%;
 }
-.some-facts .facts-title {
+.some-facts .facts-title,
+.sponsor-top .sponsor-title {
   color: #131313;
   font-size: 2.8rem;
   font-weight: 700;
@@ -206,6 +208,28 @@ header {
   font-size: 20px;
   font-weight: 600;
 }
+.sponspors-section {
+  padding: 60px 0;
+  text-align: center;
+}
+.sponsor-brands {
+  margin: 50px 0;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+footer {
+  padding: 50px 0;
+}
+footer span {
+  padding: 40px;
+  text-align: center;
+  display: block;
+  color: #424242;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background: #fff4e7;
+  font-weight: 400;
+}
 /* responsive for 992px */
 @media screen and (max-width: 1180px) {
   .features-main {
@@ -214,7 +238,8 @@ header {
   .experience {
     position: static;
   }
-  .some-facts {
+  .some-facts,
+  .sponsor-top {
     max-width: 100%;
   }
 }
@@ -225,6 +250,7 @@ header {
   }
   .container {
     width: 100%;
+    margin: auto;
   }
 
   .grid-md-col-1 {
