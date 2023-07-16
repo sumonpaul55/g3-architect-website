@@ -126,17 +126,97 @@ header {
 .features-section {
   padding: 80px 0;
 }
-.features-content {
-  max-width: 90%;
-}
 .features-title {
   padding: 0 30px;
   border-left: 5px solid #ff900e;
 }
+.features-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 150px;
+}
+
 .features-title h1 {
   color: #131313;
   font-size: 2.8rem;
   font-weight: 700;
+  margin-bottom: 10px;
+}
+.featured-img {
+  position: relative;
+}
+.experience {
+  padding: 45px;
+  color: #fff;
+  text-align: center;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  background-color: #ff900e;
+  position: absolute;
+  top: 84%;
+  left: -20%;
+}
+.experience span {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.card {
+  padding: 30px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  margin: 20px 0;
+}
+.card p {
+  margin: 0;
+}
+.fact-section {
+  padding: 60px 0;
+}
+.some-facts {
+  max-width: 40%;
+}
+.some-facts .facts-title {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.all-rewords img {
+  width: 45px;
+  margin-bottom: 10px;
+}
+.all-rewords .items {
+  padding: 20px 30px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+}
+.all-rewords .items .number {
+  color: #424242;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.all-rewords .paragraph {
+  color: #727272;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* responsive for 992px */
+@media screen and (max-width: 1180px) {
+  .features-main {
+    grid-template-columns: auto;
+  }
+  .experience {
+    position: static;
+  }
+  .some-facts {
+    max-width: 100%;
+  }
 }
 /* responsive for 768px */
 @media screen and (max-width: 768px) {
