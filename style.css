@@ -18,7 +18,7 @@
 /* display */
 .grid {
   display: grid;
-  gap: 10px;
+  gap: 25px;
 }
 .grid-col-2 {
   grid-template-columns: repeat(2, 1fr);
@@ -54,7 +54,6 @@ a {
 }
 .paragraph {
   color: #727272;
-  text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -84,33 +83,84 @@ img {
 .logo-title {
   color: #131313;
   text-align: center;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 700;
 }
 /* header */
-header{
-  background: rgba(255, 144, 14, 0.10);
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 20px 0;
 }
 /* banner section design */
 .banner-content {
   max-width: 860px;
-}
-.banner-content {
   margin: 40px auto;
+}
+
+/* team section */
+.team-part-main {
+  gap: 40px;
+}
+.team-section {
+  padding: 80px 0;
+}
+.quick-list {
+  color: #727272;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.of-our {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.features {
+  color: #ff900e;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.team-content {
+  max-width: 80%;
+}
+/* Features section */
+.features-section {
+  padding: 80px 0;
+}
+.features-content {
+  max-width: 90%;
+}
+.features-title {
+  padding: 0 30px;
+  border-left: 5px solid #ff900e;
+}
+.features-title h1 {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
 }
 /* responsive for 768px */
 @media screen and (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .grid-md-col-1 {
+    grid-template-columns: auto;
+  }
   .grid-col-4 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 /* responsive for 576px */
 @media screen and (max-width: 576px) {
   .grid-col-4 {
     grid-template-columns: auto;
   }
-  .grid-col-1 {
+  .grid-col-2 {
     grid-template-columns: auto;
   }
 }
-`
