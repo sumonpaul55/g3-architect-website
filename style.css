@@ -157,6 +157,7 @@ header {
   position: absolute;
   top: 84%;
   left: -20%;
+  border-radius: 8px;
 }
 .experience span {
   color: #fff;
@@ -268,5 +269,10 @@ footer span {
   }
   .grid-col-2 {
     grid-template-columns: auto;
+  }
+  .experience {
+    padding: 20px;
+    line-height: 40px;
+    font-size: 2.4rem;
   }
 }
