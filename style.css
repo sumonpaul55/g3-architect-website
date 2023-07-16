@@ -91,6 +91,12 @@ header {
   background: rgba(255, 144, 14, 0.1);
   padding: 20px 0;
 }
+.hero-title {
+  color: #131313;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+}
 /* banner section design */
 .banner-content {
   max-width: 860px;
